@@ -21,17 +21,13 @@ namespace HW1
             String cvvNumber = txtBoxCvv.Text.ToString();
             String nameOnCard = txtBoxNameOnCard.Text.ToString();
             String expiryDate = txtBoxExpiryDate.Text.ToString();
-            if (cardNumber == "")
-            {
-                lblErrorMessage.Text = "Please enter all fields!!!";
-                return;
-            }
-            if(!stringIsBlank(lblErrorMessage, cvvNumber, nameOnCard, expiryDate))
+            if(!stringIsBlank(lblErrorMessage, cardNumber, cvvNumber, nameOnCard, expiryDate))
             {
                 return;
             }
             if (cvvNumber.Length != 3)
             {
+                cvvValidator.ErrorMessage = "jııııı";
                 lblErrorMessage.Text = "CVV Number is invalid!!!";
                 return;
             }
@@ -81,7 +77,7 @@ namespace HW1
                 imgVisiblityFalse(imgDiscover, imgElectron, imgMasterCard, imgVisa);
             }
             // For Discover
-            else if (cardNumber.Length == 16 && firstSixValue >= 622126 || firstSixValue <= 622925 || firstFourValue == 6011 
+            else if (cardNumber.Length == 16 && firstSixValue >= 622126 && firstSixValue <= 622925 || firstFourValue == 6011 
                 || firstThreeValue >= 644 && firstThreeValue <= 649 || firstTwoValue == 65)
             {
                 imgVisiblityFalse(imgMaestro, imgElectron, imgMasterCard, imgVisa);

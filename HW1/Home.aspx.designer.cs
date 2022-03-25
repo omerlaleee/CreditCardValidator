@@ -96,6 +96,15 @@ namespace HW1
         protected global::System.Web.UI.WebControls.TextBox txtBoxCardNumber;
 
         /// <summary>
+        /// cardNumberValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator cardNumberValidator;
+
+        /// <summary>
         /// lblExpiryDate control.
         /// </summary>
         /// <remarks>
@@ -123,13 +132,13 @@ namespace HW1
         protected global::System.Web.UI.WebControls.TextBox txtBoxExpiryDate;
 
         /// <summary>
-        /// RegularExpressionValidator1 control.
+        /// dateValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator dateValidator;
 
         /// <summary>
         /// txtBoxCvv control.
@@ -139,6 +148,15 @@ namespace HW1
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtBoxCvv;
+
+        /// <summary>
+        /// cvvValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator cvvValidator;
 
         /// <summary>
         /// lblNameOnCard control.
